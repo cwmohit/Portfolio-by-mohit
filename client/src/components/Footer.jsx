@@ -1,14 +1,14 @@
 import React from "react";
 import "../styles.css";
-const Footer = () => {
+const Footer = ({bg, bgColor}) => {
 
   return (
     <div className="App mt-5">
      
-      <footer class="bg-darkk  text-white text-lg-start">
-        <div class="text-center text-white p-3 ">
+      <footer class={bgColor+" text-lg-start"} style={{background: bg}}>
+        <div class={bgColor+ "text-center p-3"}>
           © 2021 Copyright:
-          <a class="text-white" href="https://github.com/cwmohit">
+          <a class={bgColor} href="https://github.com/cwmohit">
             Cwmohit
           </a>
         </div>

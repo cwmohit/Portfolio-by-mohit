@@ -8,14 +8,14 @@ import Mohit from "../Images/mohittt.jpg";
 import service from "../Images/service.svg";
 import service2 from "../Images/service2.svg";
 import Mohit2 from "../Images/mohit2.jpg";
-import Education from "../Images/load1.gif";
+
 import { NavLink } from "react-router-dom";
 import { Carousel } from "react-bootstrap";
-const Home = () => {
+const Home = ({bgColor,bg,education}) => {
   const [postData, setPostData] = useState({
     name: '', email: '', phone: "" ,message: ''
  });
-
+  
 
  const handleSubmit = (e) => {
      e.preventDefault();
@@ -41,9 +41,9 @@ const Home = () => {
     <div className="container mt-5">
       <div className="row row1">
         <div className="col-md-6 col-12 order-md-0 order-1 d-flex justify-content-center align-items-center flex-column">
-          <h2 className='text-white'>I AM MOHIT KANDHARI</h2>
-          <h4 className='text-white'>Developer | Full Time Learner • Rajasthan, IN </h4>
-          <p className='text-white'>
+          <h2 className={bgColor}>I AM MOHIT KANDHARI</h2>
+          <h4 className={bgColor}>Developer | Full Time Learner • Rajasthan, IN </h4>
+          <p className={bgColor}>
             I am a student of{" "}
             <span className="font-weight-bold text-info">
               MBM ENGINEERING COLLEGE, JODHPUR
@@ -51,9 +51,9 @@ const Home = () => {
           </p>
           <div className="row my-3">
             <div className="col-3">
-              <a href="https://www.facebook.com/profile.php?id=100025458912741">
+              <a className={bgColor} href="https://www.facebook.com/profile.php?id=100025458912741">
                 <i
-                  className="fa  fa-2x fa-facebook-official text-white"
+                  className={bgColor+" fa fa-2x fa-facebook-official"}
                   aria-hidden="true"
                 ></i>
               </a>
@@ -61,13 +61,13 @@ const Home = () => {
             <div className="col-3">
               <a href="https://www.linkedin.com/in/mohit-kandhari-455a48186/">
                 {" "}
-                <i className="fa fa-2x fa-linkedin text-white" aria-hidden="true"></i>
+                <i className={bgColor+" fa fa-2x fa-linkedin"} aria-hidden="true"></i>
               </a>
             </div>
             <div className="col-3">
               <a href="https://github.com/cwmohit">
                 {" "}
-                <i className="fa fa-2x fa-github text-white" aria-hidden="true"></i>
+                <i className={bgColor+" fa fa-2x fa-github"} aria-hidden="true"></i>
               </a>
             </div>
            
@@ -92,13 +92,13 @@ const Home = () => {
       <div >
 
 
-        <h1 className='text-white my-5'>Education</h1>
+        <h1 className={bgColor+" my-5"}>Education</h1>
        
         <div className="row mt-4">
           <div className="col-md-6 m-auto col-10 order-md-0 order-0">
             <figure>
               <img
-                src={Education}
+                src={education}
                 className=" mohitbio img-responsive "
                 alt="image" 
               />
@@ -108,8 +108,8 @@ const Home = () => {
           <div className="col-md-6 col-12 order-md-0 order-1 d-flex justify-content-center align-items-center flex-column">
             <div className="row">
 
-              <div className="col-10 m-auto">
-                <div className="card my-0 text-white" style={{background: "black"}}>
+              <div className="col-10 mx-auto my-1">
+                <div className={bgColor+" card my-0"}  style={{background: bg}}>
                   <div className="card-body  text-center">
                     <h5 className="card-title ">
 
@@ -123,8 +123,8 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-10 m-auto">
-                <div className="card my-0 text-white"  style={{background: "black"}}>
+              <div className="col-10 mx-auto my-1">
+                <div className={bgColor+" card my-0"}  style={{background: bg}}>
                   <div className="card-body text-center">
                     <h5 className="card-title">
                       <img src="https://img.icons8.com/emoji/48/000000/school-emoji.png" className='mx-2' /><br />
@@ -135,8 +135,8 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-10 m-auto">
-                <div className="card my-0 text-white"  style={{background: "black"}}>
+              <div className="col-10 mx-auto my-1">
+                <div className={bgColor+" card my-0"}  style={{background: bg}}>
                   <div className="card-body text-center">
                     <h5 className="card-title "> <img src="https://img.icons8.com/emoji/48/000000/school-emoji.png" className='mx-2' /><br />Secondary School (2016)</h5>
                     <p className='my-1 text-muted'>Suman Public Sr. Sec. School</p>
@@ -150,7 +150,7 @@ const Home = () => {
       </div>
      
       <div className="mt-5">
-        <h1 className='mb-5 text-white'>SKILLS</h1>
+        <h1 className={bgColor+" mb-5"}>SKILLS</h1>
         <div className='row'>
           <div class="col-md-6 col-12 order-md-0 order-0">
             <figure>
@@ -204,35 +204,35 @@ const Home = () => {
 
       </div>
 
-      <h1 className='text-white my-5'>More Info</h1>
+      <h1 className={bgColor+" my-5"}>More Info</h1>
       <div className='row my-4 text-left'>
         <div className='col-lg-4 mt-2'>
-          <div class="card text-white infoCard" style={{background: "black"}}>
+          <div class={bgColor+" card text-white infoCard"} style={{background: bg}}>
             <div class="card-body">
               <img src="https://img.icons8.com/fluent/48/000000/group-of-projects.png" />
               <h5 class="card-title">Projects</h5>
               <p class="card-text text-muted">I have Developed some projects.</p>
-              <NavLink to="/Project" class="btn btn-outline-light">Get Info <CallMadeIcon/></NavLink>
+              <NavLink to="/Project" class={bgColor+" btn btn-outline-light"}>Get Info <CallMadeIcon/></NavLink>
             </div>
           </div>
         </div>
         <div className='col-lg-4 mt-2'>
-          <div class="card text-white infoCard"  style={{background: "black"}}>
+          <div class={bgColor+" card text-white infoCard"}  style={{background: bg}}>
             <div class="card-body">
             <img src="https://img.icons8.com/color/48/000000/joomla.png"/>
               <h5 class="card-title">Resume</h5>
               <p class="card-text text-muted">Download Resume</p>
-              <a target='_blank' href="https://drive.google.com/file/d/16GXUgGFHYRpzyD8VWW8dcQAHYI2QCf5v/view" class="btn btn-outline-light">Get Info <CallMadeIcon/></a>
+              <a target='_blank' href="https://drive.google.com/file/d/16GXUgGFHYRpzyD8VWW8dcQAHYI2QCf5v/view" class={bgColor+" btn btn-outline-light"}>Get Info <CallMadeIcon/></a>
             </div>
           </div>
         </div>
         <div className='col-lg-4 mt-2'>
-          <div class="card text-white infoCard" style={{background: "black"}} >
+          <div class={bgColor+" card text-white infoCard"} style={{background: bg}} >
             <div class="card-body">
             <img src="https://img.icons8.com/nolan/48/certification.png"/>
               <h5 class="card-title">Certifications</h5>
               <p class="card-text text-muted">Achivements and Certifications</p>
-              <NavLink to="/About" class="btn btn-outline-light">Get Info <CallMadeIcon/></NavLink>
+              <NavLink to="/About" class={bgColor+" btn btn-outline-light"}>Get Info <CallMadeIcon/></NavLink>
             </div>
           </div>
         </div>
@@ -240,7 +240,7 @@ const Home = () => {
 
       
       <div class="row">
-    <div class="col-md-12 col-12 mx-auto text-white mt-5">
+    <div class={bgColor+ " col-md-12 col-12 mx-auto text-white mt-5"} >
       <h1 class="text-center">Get In Touch</h1>
       <p class="text-center">I Will Be Happy To Help You</p>
       

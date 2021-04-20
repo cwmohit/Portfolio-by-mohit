@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import AboutHead from "../Images/AboutHead2.jpg";
+import AboutHead from "../Images/head.jpg";
 
 import axios from 'axios';
 
 import "../styles.css";
 
-const About = () => {
+const About = ({bg,bgColor}) => {
   let search=document.getElementById('searchTxt');
   
   const searchBlog = (e) => {
@@ -47,16 +47,16 @@ const About = () => {
         </div>
       </div>
 
-      <div className='container text-white '>
+      <div className={bgColor+" container"}>
         <h1 className='text-left mt-5'>Let Me tell you About myself</h1>
-        <p className='text-left'>I am a full time learner currently pursuing Bachelor of Electronics and Computer Science Engineering from MBM Engineering College Jodhpur.
-          I am a creative guy who loves Javascript, reactJs, Nodejs and building website with them. I am a Technolgy enthusiast always try to learn and implement.
+        <p className='text-left'>Hello I am Mohit Kandhari, currently pursuing Bachelor of Electronics and Computer Science Engineering from MBM Engineering College Jodhpur.
+          I am a Mern Stack Web Developer and also a Compitative Coder. Always willing to work with dedicated peoples , who will help me to explore my self.
   </p>
 
       </div>
 
       <div className='container mt-5'>
-        <h1 className='text-white my-5'>Certifications</h1>
+        <h1 className={bgColor+" my-5"}>Certifications</h1>
         <div className='row'>
 
           {!posts.length ? <div class="spinner-border text-primary" role="status">
@@ -64,7 +64,7 @@ const About = () => {
 </div> :
             posts.map((post) => (
               <div className='col-lg-4 col-md-4 col-10 m-auto'>
-                <div class="card mb-3 text-white" style={{ background: "black" }}>
+                <div class={bgColor+" card mb-3"} style={{ background: bg }}>
                   <img class="card-img-top" src={post.selectedFile} alt="Card image cap" />
                   <div class="card-body">
                     <h5 class="card-title">{post.company}</h5>
@@ -83,7 +83,7 @@ const About = () => {
       <div class="container mt-5">
         
         <div class="row ">
-          <div class="col-lg-10 mx-auto text-light ">
+          <div class={bgColor+" col-lg-10 mx-auto"}>
             <div class="row m-auto">
               <div class="col-lg-4 col-md-4 m-auto col-12">
                 <h2 class="text-left my-3 text-info">Featured Articles</h2>
@@ -159,7 +159,7 @@ JavaScript, often abbreviated as JS, is a programming language that conforms to 
       </div>
 
       <div>
-<section class="project-work text-light">
+<section class={bgColor+ " project-work"}>
     <div class="container headings text-left">
       <h3 class="text-center font-weight-bold mb-4">MORE THEN 1000 WEBSITE CREATED</h3>
 

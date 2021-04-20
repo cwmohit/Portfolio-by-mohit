@@ -1,35 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6a15dbb3f85899e4e942cbbf26b838ab",
+    "revision": "4075d130f0f40327f616a44f79d2433e",
     "url": "/index.html"
   },
   {
-    "revision": "0e2bc122ac18a5f7bce1",
+    "revision": "c8e290569b07e362b864",
     "url": "/static/css/2.032730b7.chunk.css"
   },
   {
-    "revision": "86045ad36e7d8c7f5af2",
-    "url": "/static/css/main.cbe4dc28.chunk.css"
+    "revision": "08513add1b81fbed5aa8",
+    "url": "/static/css/main.96998873.chunk.css"
   },
   {
-    "revision": "0e2bc122ac18a5f7bce1",
-    "url": "/static/js/2.00ee8495.chunk.js"
+    "revision": "c8e290569b07e362b864",
+    "url": "/static/js/2.ce9ea792.chunk.js"
   },
   {
     "revision": "23a5f5eda6902ba714a92fd119c14892",
-    "url": "/static/js/2.00ee8495.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.ce9ea792.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "86045ad36e7d8c7f5af2",
-    "url": "/static/js/main.bb76980d.chunk.js"
+    "revision": "08513add1b81fbed5aa8",
+    "url": "/static/js/main.38c561f8.chunk.js"
   },
   {
     "revision": "08f73d5cd9e484c26cef",
     "url": "/static/js/runtime-main.7bb332b4.js"
   },
   {
-    "revision": "13f61d1bb7f94148bc63501e71e5761d",
-    "url": "/static/media/AboutHead2.13f61d1b.jpg"
+    "revision": "6c6b20daa35303c4539cf77b729d79d1",
+    "url": "/static/media/head.6c6b20da.jpg"
+  },
+  {
+    "revision": "51295bc40d26a46651edebfa4ff3e028",
+    "url": "/static/media/head2.51295bc4.jpg"
   },
   {
     "revision": "f7f12d8b700f6d8f96ca0c84a7a366e3",
@@ -42,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "eb9b396b8898ce96b98ad4ba063fa210",
     "url": "/static/media/load1.eb9b396b.gif"
+  },
+  {
+    "revision": "da875acd264262b9662ff5d538d5db41",
+    "url": "/static/media/load2.da875acd.gif"
   },
   {
     "revision": "f50315f3686ce39b10fb7245973c245a",
@@ -58,10 +66,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7491e56f0e659f44ad2b4278d6eab63f",
     "url": "/static/media/mohittt.7491e56f.jpg"
-  },
-  {
-    "revision": "20113e6cc2b642b182a903f14dee1248",
-    "url": "/static/media/projectHead2.20113e6c.jpg"
   },
   {
     "revision": "da29fd5d30c66c70417611457f222a3c",

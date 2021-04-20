@@ -1,10 +1,10 @@
 import React from 'react';
 import service2 from "../Images/service2.svg";
 import '../styles.css';
-const Contact = () => {
+const Contact = ({bg,bgColor}) => {
   return (
     <div className='App'>
-       <div className='container text-white contactContainer '>
+       <div className={bgColor+ " contactContainer container"}>
          <h1 className='mt-3'>How You Can Reach Me</h1>
           <div className='row'>
             <div className='col-lg-8 col-md-8 col-12 mt-3'>
