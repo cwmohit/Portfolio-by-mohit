@@ -14,6 +14,7 @@
     -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -50,12 +51,17 @@
     -->
   <script>
     var preloader = document.getElementById('loading');
-    setTimeout(function myFunction() {
+    function myFunction() {
       preloader.style.display = 'none';
-    }, 5000);
+    }
   </script>
 
-
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+	AOS.init({
+		duration: 1000,
+	});
+</script>
 </body>
 
 </html>

@@ -38,9 +38,9 @@ const Home = ({bgColor,bg,education}) => {
 
 
   return (
-    <div className="container mt-5">
-      <div className="row row1">
-        <div className="col-md-6 col-12 order-md-0 order-1 d-flex justify-content-center align-items-center flex-column">
+    <div className="container mt-3" style={{overflow: "hidden"}}>
+      <div className="row row1" style={{overflow: "hidden"}}>
+        <div data-aos="fade-right" className="col-md-6 col-12 order-md-0 order-1 d-flex justify-content-center align-items-center flex-column">
           <h2 className={bgColor}>I AM MOHIT KANDHARI</h2>
           <h4 className={bgColor}>Developer | Full Time Learner • Rajasthan, IN </h4>
           <p className={bgColor}>
@@ -73,7 +73,7 @@ const Home = ({bgColor,bg,education}) => {
            
           </div>
         </div>
-        <div className="col-md-6 col-12 order-md-0 m-auto order-0">
+        <div data-aos="fade-left" className="col-md-6 col-12 order-md-0 m-auto order-0">
           <Carousel>
             <Carousel.Item>
               <figure className="mohit m-auto">
@@ -94,9 +94,9 @@ const Home = ({bgColor,bg,education}) => {
 
         <h1 className={bgColor+" my-5"}>Education</h1>
        
-        <div className="row mt-4">
+        <div className="row mt-4" style={{overflow: "hidden"}}>
           <div className="col-md-6 m-auto col-10 order-md-0 order-0">
-            <figure>
+            <figure data-aos="flip-left">
               <img
                 src={education}
                 className=" mohitbio img-responsive "
@@ -105,7 +105,7 @@ const Home = ({bgColor,bg,education}) => {
             </figure>
            
           </div>
-          <div className="col-md-6 col-12 order-md-0 order-1 d-flex justify-content-center align-items-center flex-column">
+          <div data-aos="flip-right" className="col-md-6 col-12 order-md-0 order-1 d-flex justify-content-center align-items-center flex-column">
             <div className="row">
 
               <div className="col-10 mx-auto my-1">
@@ -151,13 +151,13 @@ const Home = ({bgColor,bg,education}) => {
      
       <div className="mt-5">
         <h1 className={bgColor+" mb-5"}>SKILLS</h1>
-        <div className='row'>
-          <div class="col-md-6 col-12 order-md-0 order-0">
+        <div className='row' style={{overflow: "hidden"}}>
+          <div data-aos="zoom-in" class="col-md-6 col-12 order-md-0 order-0">
             <figure>
               <img src={Home5} class="w-100" alt="image" />
             </figure>
           </div>
-          <div class="col-md-6 col-12 order-md-0 order-0 w-100 m-auto " >
+          <div data-aos="zoom-out" class="col-md-6 col-12 order-md-0 order-0 w-100 m-auto " >
             <div class="progress " style={{ height: "25px" }}>
 
               <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style={{ width: "85%" }} aria-valuenow="85%" aria-valuemin="0" aria-valuemax="100">HTML</div>
@@ -205,8 +205,10 @@ const Home = ({bgColor,bg,education}) => {
       </div>
 
       <h1 className={bgColor+" my-5"}>More Info</h1>
-      <div className='row my-4 text-left'>
-        <div className='col-lg-4 mt-2'>
+      <div className='row my-4 text-left' style={{overflow: "hidden"}}>
+        <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className='col-lg-4 my-2'>
           <div class={bgColor+" card text-white infoCard"} style={{background: bg}}>
             <div class="card-body">
               <img src="https://img.icons8.com/fluent/48/000000/group-of-projects.png" />
@@ -216,7 +218,7 @@ const Home = ({bgColor,bg,education}) => {
             </div>
           </div>
         </div>
-        <div className='col-lg-4 mt-2'>
+        <div data-aos="zoom-in" className='col-lg-4 my-2'>
           <div class={bgColor+" card text-white infoCard"}  style={{background: bg}}>
             <div class="card-body">
             <img src="https://img.icons8.com/color/48/000000/joomla.png"/>
@@ -226,7 +228,9 @@ const Home = ({bgColor,bg,education}) => {
             </div>
           </div>
         </div>
-        <div className='col-lg-4 mt-2'>
+        <div data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className='col-lg-4 my-2'>
           <div class={bgColor+" card text-white infoCard"} style={{background: bg}} >
             <div class="card-body">
             <img src="https://img.icons8.com/nolan/48/certification.png"/>
@@ -239,7 +243,8 @@ const Home = ({bgColor,bg,education}) => {
       </div>
 
       
-      <div class="row">
+      <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" class="row" style={{overflow: "hidden"}}>
     <div class={bgColor+ " col-md-12 col-12 mx-auto text-white mt-5"} >
       <h1 class="text-center">Get In Touch</h1>
       <p class="text-center">I Will Be Happy To Help You</p>

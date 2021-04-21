@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import AboutHead from "../Images/head.jpg";
+import AboutHead from "../Images/image.jpg";
 
 import axios from 'axios';
 
@@ -37,17 +37,18 @@ const About = ({bg,bgColor}) => {
 
   return (
     <div className="App mt-4">
-      <div className="container mt-5">
+      <div className="container mt-5" style={{overflow: "hidden"}}>
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src={AboutHead} alt="First slide" />
+          <div data-aos="zoom-in" class="carousel-inner">
+            <div className="carousel-item active">
+            <div className="banner" id="banner1" style={{backgroundImage: `url(${AboutHead})`}}></div>
+              {/* <img class="d-block w-100"  src={AboutHead} alt="First slide" /> */}
             </div>
           </div>
         </div>
       </div>
 
-      <div className={bgColor+" container"}>
+      <div data-aos="zoom-out" className={bgColor+" container"}>
         <h1 className='text-left mt-5'>Let Me tell you About myself</h1>
         <p className='text-left'>Hello I am Mohit Kandhari, currently pursuing Bachelor of Electronics and Computer Science Engineering from MBM Engineering College Jodhpur.
           I am a Mern Stack Web Developer and also a Compitative Coder. Always willing to work with dedicated peoples , who will help me to explore my self.
@@ -82,7 +83,7 @@ const About = ({bg,bgColor}) => {
 
       <div class="container mt-5">
         
-        <div class="row ">
+        <div class="row " style={{overflow: "hidden"}}>
           <div class={bgColor+" col-lg-10 mx-auto"}>
             <div class="row m-auto">
               <div class="col-lg-4 col-md-4 m-auto col-12">
@@ -104,8 +105,8 @@ const About = ({bg,bgColor}) => {
 
             <div id="NewArticles">
 
-              <div class="row content mt-3">
-                <div class="col-lg-4 col-md-6 col-12 m-auto">
+              <div data-aos="flip-left" class="row content mt-3">
+                <div  class="col-lg-4 col-md-6 col-12 m-auto">
                   <figure style={{ width: "200px", margin: "auto" }} >
                     <img style={{ width: "200px" }} class="image-responsive rounded-circle"
                       src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-dsc/events/dsc%20web%2030-05_MBTJVPS.png"
@@ -132,7 +133,7 @@ const About = ({bg,bgColor}) => {
                                 the process....<span> <a href="https://portfolio-a7a25.web.app/article.html" target='_blank'>Read More</a> </span></p>
                 </div>
               </div>
-              <div class="row content mt-3">
+              <div data-aos="flip-right" class="row content mt-3">
                 <div class="col-lg-4 col-md-6 col-12 m-auto">
                   <figure style={{ width: "200px", margin: "auto" }} >
                     <img style={{ width: "200px" }} class="image-responsive rounded-circle"
@@ -160,7 +161,7 @@ JavaScript, often abbreviated as JS, is a programming language that conforms to 
 
       <div>
 <section class={bgColor+ " project-work"}>
-    <div class="container headings text-left">
+    <div data-aos="flip-up" class="container headings text-left" style={{overflow: "hidden"}}>
       <h3 class="text-center font-weight-bold mb-4">MORE THEN 1000 WEBSITE CREATED</h3>
 
 

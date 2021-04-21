@@ -34,7 +34,7 @@ const Project = ({bg,bgColor}) => {
 
       <div className={bgColor+" container mt-5"}>
         <h1 >Projects</h1>
-        <p className='d-flex justify-content-center align-items-center'>I have developed some project <i className="fa fa-2x fa-github text-white mx-2 " aria-hidden="true"></i></p>
+        <p className='d-flex justify-content-center align-items-center'>I have developed some project <i className={bgColor+" fa fa-2x fa-github mx-2"} aria-hidden="true"></i></p>
         <div className='row mt-5'>
         {!posts.length ? <div class="spinner-border text-primary" role="status">
   <span class="sr-only">Loading...</span>
