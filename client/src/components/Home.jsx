@@ -32,7 +32,7 @@ const Home = ({bgColor,bg,education}) => {
     let ele = document.createElement("div");
     let Contact = document.getElementById('contact');
     ele.innerText = `Thanks For connecting.`;
-    ele.setAttribute("class","alert alert-success");
+    ele.setAttribute("className","alert alert-success");
     Contact.appendChild(ele);
    }
 
@@ -152,51 +152,51 @@ const Home = ({bgColor,bg,education}) => {
       <div className="mt-5">
         <h1 className={bgColor+" mb-5"}>SKILLS</h1>
         <div className='row' style={{overflow: "hidden"}}>
-          <div data-aos="zoom-in" class="col-md-6 col-12 order-md-0 order-0">
+          <div data-aos="zoom-in" className="col-md-6 col-12 order-md-0 order-0">
             <figure>
-              <img src={Home5} class="w-100" alt="image" />
+              <img src={Home5} className="w-100" alt="image" />
             </figure>
           </div>
-          <div data-aos="zoom-out" class="col-md-6 col-12 order-md-0 order-0 w-100 m-auto " >
-            <div class="progress " style={{ height: "25px" }}>
+          <div data-aos="zoom-out" className="col-md-6 col-12 order-md-0 order-0 w-100 m-auto " >
+            <div className="progress " style={{ height: "25px" }}>
 
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style={{ width: "85%" }} aria-valuenow="85%" aria-valuemin="0" aria-valuemax="100">HTML</div>
+              <div className="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style={{ width: "85%" }} aria-valuenow="85%" aria-valuemin="0" aria-valuemax="100">HTML</div>
             </div>
-            <div class="progress my-3" style={{ height: "25px" }}>
+            <div className="progress my-3" style={{ height: "25px" }}>
 
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{ width: "75%" }} aria-valuenow="75%" aria-valuemin="0" aria-valuemax="100">CSS</div>
+              <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{ width: "75%" }} aria-valuenow="75%" aria-valuemin="0" aria-valuemax="100">CSS</div>
             </div>
-            <div class="progress my-3" style={{ height: "25px" }}>
+            <div className="progress my-3" style={{ height: "25px" }}>
 
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style={{ width: "80%" }} aria-valuenow="80%" aria-valuemin="0" aria-valuemax="100">Javascript</div>
+              <div className="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style={{ width: "80%" }} aria-valuenow="80%" aria-valuemin="0" aria-valuemax="100">Javascript</div>
             </div>
-            <div class="progress my-3" style={{ height: "25px" }}>
+            <div className="progress my-3" style={{ height: "25px" }}>
 
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" style={{ width: "90%" }} aria-valuenow="90%" aria-valuemin="0" aria-valuemax="100">Bootstrap</div>
+              <div className="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" style={{ width: "90%" }} aria-valuenow="90%" aria-valuemin="0" aria-valuemax="100">Bootstrap</div>
             </div>
-            <div class="progress my-3" style={{ height: "25px" }}>
+            <div className="progress my-3" style={{ height: "25px" }}>
 
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style={{ width: "75%" }} aria-valuenow="75%" aria-valuemin="0" aria-valuemax="100">React</div>
+              <div className="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style={{ width: "75%" }} aria-valuenow="75%" aria-valuemin="0" aria-valuemax="100">React</div>
             </div>
-            <div class="progress my-3" style={{ height: "25px" }}>
+            <div className="progress my-3" style={{ height: "25px" }}>
 
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark text-white" role="progressbar" style={{ width: "90%" }} aria-valuenow="90%" aria-valuemin="0" aria-valuemax="100">NodeJS</div>
+              <div className="progress-bar progress-bar-striped progress-bar-animated bg-dark text-white" role="progressbar" style={{ width: "90%" }} aria-valuenow="90%" aria-valuemin="0" aria-valuemax="100">NodeJS</div>
             </div>
-            <div class="progress my-3" style={{ height: "25px" }}>
+            <div className="progress my-3" style={{ height: "25px" }}>
 
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style={{ width: "70%" }} aria-valuenow="70%" aria-valuemin="0" aria-valuemax="100">MongoDB</div>
+              <div className="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style={{ width: "70%" }} aria-valuenow="70%" aria-valuemin="0" aria-valuemax="100">MongoDB</div>
             </div>
-            <div class="progress my-3" style={{ height: "25px" }}>
+            <div className="progress my-3" style={{ height: "25px" }}>
 
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style={{ width: "60%" }} aria-valuenow="60%" aria-valuemin="0" aria-valuemax="100">Firebase</div>
+              <div className="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style={{ width: "60%" }} aria-valuenow="60%" aria-valuemin="0" aria-valuemax="100">Firebase</div>
             </div>
-            <div class="progress my-3" style={{ height: "25px" }}>
+            <div className="progress my-3" style={{ height: "25px" }}>
 
-              <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar" style={{ width: "70%" }} aria-valuenow="70%" aria-valuemin="0" aria-valuemax="100">C++</div>
+              <div className="progress-bar progress-bar-striped progress-bar-animated " role="progressbar" style={{ width: "70%" }} aria-valuenow="70%" aria-valuemin="0" aria-valuemax="100">C++</div>
             </div>
-            <div class="progress my-3" style={{ height: "25px" }}>
+            <div className="progress my-3" style={{ height: "25px" }}>
 
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style={{ width: "60%" }} aria-valuenow="60%" aria-valuemin="0" aria-valuemax="100">Core Java</div>
+              <div className="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style={{ width: "60%" }} aria-valuenow="60%" aria-valuemin="0" aria-valuemax="100">Core Java</div>
             </div>
           </div>
 
@@ -209,34 +209,34 @@ const Home = ({bgColor,bg,education}) => {
         <div data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine" className='col-lg-4 my-2'>
-          <div class={bgColor+" card text-white infoCard"} style={{background: bg}}>
-            <div class="card-body">
+          <div className={bgColor+" card text-white infoCard"} style={{background: bg}}>
+            <div className="card-body">
               <img src="https://img.icons8.com/fluent/48/000000/group-of-projects.png" />
-              <h5 class="card-title">Projects</h5>
-              <p class="card-text text-muted">I have Developed some projects.</p>
-              <NavLink to="/Project" class={bgColor+" btn btn-outline-light"}>Get Info <CallMadeIcon/></NavLink>
+              <h5 className="card-title">Projects</h5>
+              <p className="card-text text-muted">I have Developed some projects.</p>
+              <NavLink to="/Project" className={bgColor+" btn btn-outline-info"}>Get Info <CallMadeIcon/></NavLink>
             </div>
           </div>
         </div>
         <div data-aos="zoom-in" className='col-lg-4 my-2'>
-          <div class={bgColor+" card text-white infoCard"}  style={{background: bg}}>
-            <div class="card-body">
+          <div className={bgColor+" card text-white infoCard"}  style={{background: bg}}>
+            <div className="card-body">
             <img src="https://img.icons8.com/color/48/000000/joomla.png"/>
-              <h5 class="card-title">Resume</h5>
-              <p class="card-text text-muted">Download Resume</p>
-              <a target='_blank' href="https://drive.google.com/file/d/16GXUgGFHYRpzyD8VWW8dcQAHYI2QCf5v/view" class={bgColor+" btn btn-outline-light"}>Get Info <CallMadeIcon/></a>
+              <h5 className="card-title">Resume</h5>
+              <p className="card-text text-muted">Download Resume</p>
+              <a target='_blank' href="https://drive.google.com/file/d/19s8NcXEh_Sqrue2gtLoQkSGeenvbifas/view?usp=sharing" class={bgColor+" btn btn-outline-info"}>Get Info <CallMadeIcon/></a>
             </div>
           </div>
         </div>
         <div data-aos="fade-left"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine" className='col-lg-4 my-2'>
-          <div class={bgColor+" card text-white infoCard"} style={{background: bg}} >
-            <div class="card-body">
+          <div className={bgColor+" card text-white infoCard"} style={{background: bg}} >
+            <div className="card-body">
             <img src="https://img.icons8.com/nolan/48/certification.png"/>
-              <h5 class="card-title">Certifications</h5>
-              <p class="card-text text-muted">Achivements and Certifications</p>
-              <NavLink to="/About" class={bgColor+" btn btn-outline-light"}>Get Info <CallMadeIcon/></NavLink>
+              <h5 className="card-title">Certifications</h5>
+              <p className="card-text text-muted">Achivements and Certifications</p>
+              <NavLink to="/About" className={bgColor+" btn btn-outline-info"}>Get Info <CallMadeIcon/></NavLink>
             </div>
           </div>
         </div>
@@ -244,37 +244,37 @@ const Home = ({bgColor,bg,education}) => {
 
       
       <div data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" class="row" style={{overflow: "hidden"}}>
-    <div class={bgColor+ " col-md-12 col-12 mx-auto text-white mt-5"} >
-      <h1 class="text-center">Get In Touch</h1>
-      <p class="text-center">I Will Be Happy To Help You</p>
+     data-aos-anchor-placement="top-bottom" className="row" style={{overflow: "hidden"}}>
+    <div className={bgColor+ " col-md-12 col-12 mx-auto text-white mt-5"} >
+      <h1 className="text-center">Get In Touch</h1>
+      <p className="text-center">I Will Be Happy To Help You</p>
       
-      <div class="succussmsg " id="contact"></div>
+      <div className="succussmsg " id="contact"></div>
 
           <form id="form" onSubmit={handleSubmit}>
-                <div class="form-group text-left">
-                    <label for="name">Name</label>
+                <div className="form-group text-left">
+                    <label >Name</label>
                     <input type="text" id="name" value={postData.name} onChange={(e) => setPostData({ ...postData, name: e.target.value })} aria-describedby="name" class="form-control"  
                         placeholder="Enter Name" name="name" required />
 
                 </div>
-                <div class="form-group text-left">
-                    <label for="exampleInputEmail1">Email address</label>
+                <div className="form-group text-left">
+                    <label >Email address</label>
                     <input type="email" value={postData.email} onChange={(e) => setPostData({ ...postData, email: e.target.value })} id="email" class="form-control"  aria-describedby="emailHelp"
                         placeholder="Enter email" name="email" required />
                    
                 </div>
-                <div class="form-group text-left">
-                    <label for="phone">Phone</label>
+                <div className="form-group text-left">
+                    <label >Phone</label>
                     <input type="number" value={postData.phone} onChange={(e) => setPostData({ ...postData, phone: e.target.value })} id="phone" class="form-control"  placeholder="Phone" name="phone" required />
                 </div>
-               <div class="form-group text-left">
-                    <label for="message">Message</label>
+               <div className="form-group text-left">
+                    <label >Message</label>
                     <input type="text" value={postData.message} onChange={(e) => setPostData({ ...postData, message: e.target.value })} id="message" class="form-control"  aria-describedby="emailHelp"
                         placeholder="Enter Message" name="message" required />
 
                 </div>
-                <button  id="submit" class="btn btn-info btn-block">Send</button>
+                <button  id="submit" className="btn btn-info btn-block">Send</button>
               </form>
         </div>
 

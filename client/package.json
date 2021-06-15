@@ -23,6 +23,9 @@
   "devDependencies": {
     "typescript": "3.8.3"
   },
+  "devServer":{
+  "historyApiFallback": true
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

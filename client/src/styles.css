@@ -49,14 +49,16 @@
   font-family: sans-serif;
   text-align: center;
   /* background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); */
-  background: black;
+  background: url(https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-attachment: fixed;
   overflow: hidden;
 }
 .Applight {
   font-family: sans-serif;
   text-align: center;
   /* background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); */
-  background: white;
+  background: url(https://images.pexels.com/photos/950241/pexels-photo-950241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-attachment: fixed;
   overflow: hidden;
 }
 .card {

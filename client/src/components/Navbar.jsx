@@ -1,7 +1,9 @@
 
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Mohit from "../Images/mohit1.jpg";
+import Mohit from "../Images/mohittt.jpg";
+// import Mohit from "../Images/mohit1.jpg";
+import Avatar from '@material-ui/core/Avatar';
 import style from '../styles.css';
 import "../styles.css";
 const Navbar = ({setTheme,bgColor}) => {
@@ -14,7 +16,7 @@ const Navbar = ({setTheme,bgColor}) => {
      setToggle(!toggle);
      setTheme(toggle); 
     if(toggle==true){
-    setNavbarColor('navbar navbar-expand-lg navbar-light bg-light fixed-top');
+    setNavbarColor('navbar navbar-expand-lg navbar-light bg-white fixed-top');
    }else{
     setNavbarColor('navbar navbar-expand-lg navbar-dark bg-darkk fixed-top');
    }
@@ -26,7 +28,8 @@ const Navbar = ({setTheme,bgColor}) => {
       <nav className={navbarColor}>
         <div className="container">
           <NavLink className="navbar-brand" to="/">
-            <img src="https://img.icons8.com/color/48/000000/circled-user-male-skin-type-1-2--v2.png" />{" "}
+          <Avatar alt="mohit" src={Mohit} />
+            {/* <img src="https://img.icons8.com/color/48/000000/circled-user-male-skin-type-1-2--v2.png" />{" "} */}
           </NavLink>
           <button
             className="navbar-toggler"
