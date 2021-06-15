@@ -14,28 +14,30 @@ import PostProjects from './components/PostProjects';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/js/src/collapse.js";
 import { Switch, Route, Redirect } from "react-router-dom";
+import ScrollTop from "./components/ScrollTop";
 export default function App() {
   const [bgColor,setBgColor]=useState('Appdark');
   const [bgtext,setBgtext]=useState('text-white');
-  const [bg,setBg]=useState('black');
+  const [bg,setBg]=useState('url(https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)');
   const [education,setEducation]=useState(Education);
   const setTheme=(theme)=>{
   console.log(theme);
   if(theme){
     setBgColor("Applight");
     setBgtext("text-dark");
-    setBg("white")
+    setBg("url(https://images.pexels.com/photos/950241/pexels-photo-950241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)")
     setEducation(Education2);
   }else{
     setBgColor("Appdark");
     setBgtext('text-white');
-    setBg("black")
+    setBg("url(https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)")
     setEducation(Education);
   }
   }
 
   return (
     <div className={bgColor}>
+      <ScrollTop/>
       <Navbar setTheme={setTheme} bgColor={bgColor} />
       <Switch>
         <Route exact path="/"  component={()=><Home bg={bg} education={education}  bgColor={bgtext} />} />

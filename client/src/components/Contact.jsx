@@ -3,7 +3,7 @@ import service2 from "../Images/service2.svg";
 import '../styles.css';
 const Contact = ({bg,bgColor}) => {
   return (
-    <div className='App'>
+    <div className='App' style={{minHeight: "100vh", display: "flex", alignItems: "center"}}>
        <div className={bgColor+ " contactContainer container"}>
          <h1 className='mt-3'>How You Can Reach Me</h1>
           <div className='row'>

@@ -50,8 +50,9 @@ const About = ({bg,bgColor}) => {
 
       <div data-aos="zoom-out" className={bgColor+" container"}>
         <h1 className='text-left mt-5'>Let Me tell you About myself</h1>
-        <p className='text-left'>Hello I am Mohit Kandhari, currently pursuing Bachelor of Electronics and Computer Science Engineering from MBM Engineering College Jodhpur.
-          I am a Mern Stack Web Developer and also a Compitative Coder. Always willing to work with dedicated peoples , who will help me to explore my self.
+        <p className='text-left'>Hello I am mohit kandhari, currently pursuing electronics and computer science engineering from MBM engineering college, Jodhpur.I am a Software Engineer with excellent problem solving skills, ability to
+perform well in team. Passionate in coding and always willing to
+work with dedicated peoples , who will help me to explore my self.
   </p>
 
       </div>
@@ -60,7 +61,7 @@ const About = ({bg,bgColor}) => {
         <h1 className={bgColor+" my-5"}>Certifications</h1>
         <div className='row'>
 
-          {!posts.length ? <div class="spinner-border text-primary" role="status">
+          {!posts.length ? <div class="spinner-border text-center text-primary" role="status">
   <span class="sr-only">Loading...</span>
 </div> :
             posts.map((post) => (
